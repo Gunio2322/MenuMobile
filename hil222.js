@@ -10,13 +10,13 @@ let callback = (entries, observer) => {
     else if(entry.target){
       console.log('target');
 
-      };
+      }})};
   
   let options = {
     root: null,
     rootMargin: '0px',
     threshold: 1.0
-    )}; )
+    }; 
 let observer = new IntersectionObserver(callback, options);
 const cont = document.querySelector('#containers');
 const target = cont.querySelectorAll("section[id]");
