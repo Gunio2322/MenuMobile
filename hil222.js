@@ -1,28 +1,48 @@
-
+(function() {
 
 let callback = (entries, observer) => {
     entries.forEach((entry) => {
-     if(entry.isIntersecting){
 
-      console.log('isintersecting');
+     
+     if(entry.isIntersecting){
+console.log('is');
+console.log(entry)
+       
      
     }
-    else if(entry.target){
-      console.log('target');
+    // else if(entry.target){
+    //   console.log('isinter');
 
-      }})};
+    //   }
+    })};
   
   let options = {
-    root: null,
+    root: document.querySelector('#header'),
     rootMargin: '0px',
-    threshold: 1.0
+    threshold: 0.6
     }; 
 let observer = new IntersectionObserver(callback, options);
-const cont = document.querySelector('#containers');
-const target = cont.querySelectorAll("section[id]");
-observer.observe(target);
+// const target = document.querySelector('#containers');
+// const arow = document.querySelectorAll('a[href^="#"]');
+
+let targets = document.querySelectorAll('section[id]');
+targets.forEach(function(e){
+  observer.observe(e)
+  // console.log(e);
+  // console.log(targets);
+});
 
 
+  
+
+
+// conty.forEach(function(entry) {
+//   console.log(entry);
+// });
+
+// observer.observe(target)
+
+}());
 // DRUGI OBSERVER
 
 
@@ -53,10 +73,3 @@ observer.observe(target);
 //       observer.observe(target); //target moze byc img div
   
 //   }());
-
-
-
-
-
-
-
