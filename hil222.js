@@ -2,11 +2,16 @@
 
 let callback = (entries, observer) => {
     entries.forEach((entry) => {
-
+// console.log(entry)
      
      if(entry.isIntersecting){
-console.log('is');
-console.log(entry)
+       console.log(entry.target.id);
+      //  let manh = entry.target;
+      //  console.log(manh);
+//  let bab = manh.innerHTML      
+
+// console.log(manh.attr("#"));
+
        
      
     }
@@ -31,8 +36,16 @@ targets.forEach(function(e){
   // console.log(e);
   // console.log(targets);
 });
+let navia = document.querySelectorAll('[href^="#"]');
+navia.forEach(function(n){
+  console.log(n);
+let aga = n.innerHTML;
+
+console.log(aga);
 
 
+
+});
   
 
 
