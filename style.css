@@ -24,7 +24,7 @@ li a {
     padding: .6rem;
 }
 p {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 nav {
@@ -100,7 +100,7 @@ li a:hover::after {
         padding-left: 10px;
     }
     p {
-        font-size: 3rem;
+        font-size: 2rem;
     }
         ul {
            position: absolute;
