@@ -22,9 +22,16 @@ li a {
     text-decoration: none;
     position: relative;
     padding: .6rem;
+   
+}
+li .current {
+    color: rgb(201, 14, 14);
 }
 p {
     font-size: 2rem;
+}
+.textov p{
+color: red;
 }
 
 nav {
